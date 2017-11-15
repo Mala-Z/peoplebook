@@ -1,0 +1,16 @@
+  <nav class="navbar navbar-toggleable-md  bg-faded navbar-inverse bg-primary">
+    <div class="navbar-collapse">
+      <div class="navbar-nav">
+        <a routerLink="/" class="nav-item nav-link active" href="#">
+          <i class="fa fa-home"></i> Home </a>
+      </div>
+    </div>
+    <input style="width: 250px" type="text" id="search" class="form-control" [(ngModel)]="search" (keyup)="updateData($event)" placeholder="Search for..."/>
+
+  </nav>
+
+  <div id="container">
+    <router-outlet></router-outlet>
+  </div>
+
+  <footer id="footer">Copyright &copy; 2017 Cristian & Marco.</footer>
